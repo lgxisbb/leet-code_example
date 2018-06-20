@@ -1,4 +1,4 @@
-class Solution {
+public class leetcode1 {
 
     public int[] twoSumByOneHash(int[] nums, int target) {
         HashMap<Integer,Intger> map = new HashMap();

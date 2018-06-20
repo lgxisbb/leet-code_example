@@ -16,12 +16,24 @@ import com.sun.org.apache.xpath.internal.SourceTree;
  * 输出：7 -> 0 -> 8
  * 原因：342 + 465 = 807
  */
-class Solution {
+
+import java.math.BigInteger;
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode(int x) {
+        val = x;
+    }
+}
+
+public class leetcode2 {
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         String s1 = "";
         String s2 = "";
 
-        while (null != l1 ) {
+        while (null != l1) {
             s1 = l1.val + s1;
             l1 = l1.next;
         }
@@ -30,6 +42,7 @@ class Solution {
             s2 = l2.val + s2;
             l2 = l2.next;
         }
+
         String sum = new BigInteger(s1).add(new BigInteger(s2)).toString();
         char[] sumchar = sum.toCharArray();
         ListNode res = new ListNode(0);
@@ -41,5 +54,4 @@ class Solution {
         return res.next;
     }
 
-    
 }
