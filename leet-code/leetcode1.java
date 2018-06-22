@@ -1,7 +1,8 @@
+import java.util.HashMap;
 public class leetcode1 {
 
     public int[] twoSumByOneHash(int[] nums, int target) {
-        HashMap<Integer,Intger> map = new HashMap();
+        HashMap<Integer,Integer> map = new HashMap();
         for (int i = 0; i < nums.length; i++) {
             int complement = target - nums[i];
             if (map.containsKey(complement)) {

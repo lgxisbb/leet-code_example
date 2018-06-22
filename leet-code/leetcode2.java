@@ -1,7 +1,5 @@
 import java.awt.List;
 
-import com.sun.org.apache.xpath.internal.SourceTree;
-
 /**
  * Definition for singly-linked list.
  * public class ListNode {
