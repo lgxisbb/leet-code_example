@@ -9,7 +9,8 @@ import java.util.HashSet;
 public class leetcode3 {
 
     /**
-     * 自己做的穷举暴力破解法 效率比官方的高一点，但是也高不到哪里去
+     * 自己做的穷举暴力破解法 
+     * 效率比官方穷举的高一点，但是也高不到哪里去
      */
     public int lengthOfLongestSubstring(String s) {
         char[] charArr = s.toCharArray();
